@@ -1,0 +1,25 @@
+server:
+  port: 10080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sprinkling_money?serverTimezone=Asia/Seoul
+    username: kakao
+    password: kakao!@#123
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+        jdbc:
+          batch_size: 100
+        order_inserts: true
+        order_updates: true
+
+token:
+  max-length: 3
+  relax-time-millis: 500
+
+distribution:
+  valid-day: 7
