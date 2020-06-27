@@ -14,7 +14,7 @@ public class UserService {
     public int registerUser(String userName) {
         try {
             User user = new User(userName);
-            userRepository.save(user);
+            user = userRepository.save(user);
             return user.getId();
         } catch (Exception ex) {
             throw new UserException(ex, UserExceptionCode.USER_REGISTER_FAILED, userName);

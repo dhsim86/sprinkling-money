@@ -32,9 +32,9 @@ public class DistributionService {
         return OffsetDateTime.now().minusDays(distributionConfiguration.getValidDay());
     }
 
-    public Distribution createDistribution(Money amount, int targetMemberCount) {
-        List<Money> moneyList = amount.distribute(secureRandomGenerator, targetMemberCount);
-        return Distribution.newInstance(targetMemberCount, amount, tokenService.generateToken(), moneyList);
+    public Distribution createDistribution(Money amount, int targetUserCount) {
+        List<Money> moneyList = amount.distribute(secureRandomGenerator, targetUserCount);
+        return Distribution.newInstance(targetUserCount, amount, tokenService.generateToken(), moneyList);
     }
 
     public Distribution inquiryDistribution(User user, String roomId, String tokenValue) {

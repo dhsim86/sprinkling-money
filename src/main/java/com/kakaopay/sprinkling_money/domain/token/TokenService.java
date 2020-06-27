@@ -25,7 +25,7 @@ public class TokenService {
             while (tokenRepository.saveIfNoExists(token) == 0) {
                 Thread.sleep(tokenConfiguration.getRelaxTimeMillis());
             }
-        } catch (InterruptedException ex) {
+        } catch (Exception ex) {
             throw new TokenException(TokenExceptionCode.TOKEN_ISSUE_FAILED);
         }
 

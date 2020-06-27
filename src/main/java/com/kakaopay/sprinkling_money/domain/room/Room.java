@@ -10,7 +10,7 @@ import java.util.*;
 @Setter
 @Getter
 @Entity
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor
 @EqualsAndHashCode(of = {"id"})
 public class Room {
 

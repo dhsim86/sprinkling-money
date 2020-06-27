@@ -2,15 +2,16 @@ package com.kakaopay.sprinkling_money.domain.room.relation;
 
 import com.kakaopay.sprinkling_money.domain.room.Room;
 import com.kakaopay.sprinkling_money.domain.user.User;
-import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 
+@Setter
 @Getter
 @Entity
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor
 public class RoomJoin {
 
     @EmbeddedId

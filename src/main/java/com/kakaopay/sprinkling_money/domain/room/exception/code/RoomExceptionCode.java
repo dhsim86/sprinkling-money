@@ -6,7 +6,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public enum RoomExceptionCode {
 
-    ROOM_CREATION_FAILED("Failed to create room. room name: '%s', cause: '%s'");
+    ROOM_CREATION_FAILED("Failed to create room. room name: '%s'");
 
     private String message;
 
