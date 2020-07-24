@@ -1,7 +1,6 @@
 package com.kakaopay.sprinkling_money.application.distribution;
 
 import com.kakaopay.sprinkling_money.domain.distribution.Distribution;
-import com.kakaopay.sprinkling_money.domain.distribution.DistributionRepository;
 import com.kakaopay.sprinkling_money.domain.distribution.DistributionService;
 import com.kakaopay.sprinkling_money.domain.user.User;
 import com.kakaopay.sprinkling_money.domain.user.UserRepository;
