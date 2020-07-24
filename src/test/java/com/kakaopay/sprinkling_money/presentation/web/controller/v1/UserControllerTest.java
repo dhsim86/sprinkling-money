@@ -3,7 +3,6 @@ package com.kakaopay.sprinkling_money.presentation.web.controller.v1;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kakaopay.sprinkling_money.domain.user.UserService;
 import com.kakaopay.sprinkling_money.presentation.web.controller.v1.protocol.RegisterUserRequest;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
