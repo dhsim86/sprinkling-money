@@ -15,9 +15,6 @@ public class InquiryDistributionAppService {
     private UserRepository userRepository;
 
     @Autowired
-    private DistributionRepository distributionRepository;
-
-    @Autowired
     private DistributionService distributionService;
 
     public Distribution inquiryDistribution(int userId, String roomId, String tokenValue) {
